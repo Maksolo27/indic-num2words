@@ -24,7 +24,7 @@ setuptools.setup(
 
     name="<indic-num2words>",
 
-    version=find_version("bin/indic-num2words"),
+    version="1.0.0",
 
     author="<authorname>",
 
