@@ -24,7 +24,7 @@ setuptools.setup(
 
     name="<indic-num2words>",
 
-    version="1.0.0",
+    version="0.1",
 
     author="<authorname>",
 
