@@ -4,10 +4,27 @@ with open("README.rst", "r") as fh:
 
     long_description = fh.read()
 
+def find_version(fname):
+    """Parse file & return version number matching 0.0.1 regex
+    Returns str or raises RuntimeError
+    """
+    version = ''
+    with open(fname, 'r', encoding="utf-8") as fp:
+        reg = re.compile(r'__version__ = [\'"]([^\'"]*)[\'"]')
+        for line in fp:
+            m = reg.match(line)
+            if m:
+                version = m.group(1)
+                break
+    if not version:
+        raise RuntimeError('Cannot find version information')
+    return version
+
 setuptools.setup(
 
     name="<indic-num2words>",
 
+    version=find_version("bin/indic-num2words"),
 
     author="<authorname>",
 
