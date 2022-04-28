@@ -6,13 +6,13 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
 
-    name="<template-package-username>", # Replace with your username
+    name="<indic-num2words>", # Replace with your username
 
     version="1.0.0",
 
     author="<authorname>",
 
-    author_email="<authorname@templatepackage.com>",
+    author_email="<authorname@indic-num2words.com>",
 
     description="<Template Setup.py package>",
 
