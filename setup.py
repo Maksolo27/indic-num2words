@@ -6,9 +6,8 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
 
-    name="<indic-num2words>", # Replace with your username
+    name="<indic-num2words>",
 
-    version="1.0.0",
 
     author="<authorname>",
 
